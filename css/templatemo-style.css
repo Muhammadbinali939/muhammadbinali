@@ -325,10 +325,9 @@ hr {
 /* START ABOUT */
 
 .tm-about {
-  background: url('../images/about-bg.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
+  background: url('../images/about-bg.jpg') no-repeat center center;
+  background-size: contain;      /* shows full image */
+  background-attachment: scroll; /* prevents repeating issues */
   padding-top: 60px;
   padding-bottom: 100px;
 }
@@ -430,6 +429,7 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
+
 
 
 
