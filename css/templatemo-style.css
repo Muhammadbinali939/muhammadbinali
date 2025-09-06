@@ -328,7 +328,7 @@ hr {
   background: url('../images/about-bg.jpg') no-repeat center center;
   background-size: contain;         /* show the full image */
   background-repeat: no-repeat;     /* prevent multiple copies */
-  background-attachment: scroll;    /* change from fixed → scroll */
+  background-attachment: fixed;    /* change from fixed → scroll */
   padding-top: 60px;
   padding-bottom: 100px;
 }
@@ -430,6 +430,7 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
+
 
 
 
