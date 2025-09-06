@@ -326,11 +326,13 @@ hr {
 
 .tm-about {
   background: url('../images/about-bg.jpg') no-repeat center center;
-  background-size: contain;       /* show full image */
-  background-attachment: fixed;   /* optional: parallax effect */
+  background-size: contain;         /* show the full image */
+  background-repeat: no-repeat;     /* prevent multiple copies */
+  background-attachment: scroll;    /* change from fixed → scroll */
   padding-top: 60px;
   padding-bottom: 100px;
 }
+
 
 /* END ABOUT */
 
@@ -428,6 +430,7 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
+
 
 
 
