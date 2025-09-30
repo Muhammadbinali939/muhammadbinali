@@ -325,25 +325,13 @@ hr {
 /* START ABOUT */
 
 .tm-about {
-  background-color: #000;   /* fallback background */
+  background: url('../images/about-bg.jpg') no-repeat center center;
+  background-size: contain;      /* shows full image */
+  background-attachment: scroll; /* prevents repeating issues */
+  background-color: #000; /* or any color matching your image */
   padding-top: 60px;
   padding-bottom: 100px;
-  text-align: center;       /* center everything inside */
 }
-
-.tm-about img {
-  display: block;
-  margin: 0 auto;          /* horizontal center */
-  max-width: 100%;         /* responsive on mobile */
-  height: auto;
-  margin-bottom: 20px;     /* space below image */
-}
-
-.about-content h2,
-.about-content p {
-  color: #fff;             /* text color to show on dark background */
-}
-
 
 
 /* END ABOUT */
@@ -442,8 +430,6 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
-
-
 
 
 
