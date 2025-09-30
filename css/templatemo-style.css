@@ -322,52 +322,17 @@ hr {
 }
 /* END RESUME */
 
-/* About Section */
+/* START ABOUT */
+
 .tm-about {
-  background-color: #000;  /* Dark background */
+  background: url('../images/about-bg.jpg') no-repeat center center;
+  background-size: contain;      /* shows full image */
+  background-attachment: scroll; /* prevents repeating issues */
+  background-color: #000; /* or any color matching your image */
   padding-top: 60px;
   padding-bottom: 100px;
-  color: #fff;
 }
 
-.tm-about .about-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;      /* optional rounded corners */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* optional shadow */
-}
-
-.tm-about .title h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.tm-about .title h1.tm-red-text {
-  color: #ff4c4c;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.tm-about p {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 15px;
-}
-
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-  .tm-about .title h2 {
-    font-size: 24px;
-  }
-  .tm-about .title h1.tm-red-text {
-    font-size: 28px;
-  }
-  .tm-about p {
-    font-size: 14px;
-  }
-}
 
 /* END ABOUT */
 
@@ -465,8 +430,6 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
-
-
 
 
 
