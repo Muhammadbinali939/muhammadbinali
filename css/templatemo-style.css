@@ -325,16 +325,23 @@ hr {
 /* START ABOUT */
 
 .tm-about {
-  background: url('../images/about-bg.jpg') no-repeat center center;
-  background-size: cover;       /* cover ensures it fills section while keeping aspect ratio */
-  background-attachment: scroll;
-  background-color: #000;
+  background-color: #000;   /* fallback background */
   padding-top: 60px;
   padding-bottom: 100px;
-  display: flex;                /* centers content inside the section */
-  justify-content: center;      /* horizontal center */
-  align-items: center;          /* vertical center */
-  text-align: center;           /* center text if any */
+  text-align: center;       /* center everything inside */
+}
+
+.tm-about img {
+  display: block;
+  margin: 0 auto;          /* horizontal center */
+  max-width: 100%;         /* responsive on mobile */
+  height: auto;
+  margin-bottom: 20px;     /* space below image */
+}
+
+.about-content h2,
+.about-content p {
+  color: #fff;             /* text color to show on dark background */
 }
 
 
@@ -435,6 +442,7 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
+
 
 
 
