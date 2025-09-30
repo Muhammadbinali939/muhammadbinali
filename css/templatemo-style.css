@@ -322,16 +322,58 @@ hr {
 }
 /* END RESUME */
 
-/* START ABOUT */
-
+/* About Section */
 .tm-about {
-  background: url('../images/about-bg.jpg') no-repeat center center;
-  background-size: contain;      /* shows full image */
-  background-attachment: scroll; /* prevents repeating issues */
-  background-color: #000; /* or any color matching your image */
+  background-color: #000;       /* Dark background for contrast */
   padding-top: 60px;
   padding-bottom: 100px;
+  text-align: center;           /* Center all content */
 }
+
+/* Profile Image */
+.tm-about .about-img {
+  display: block;
+  margin: 0 auto 20px;         /* Center image + add space below */
+  max-width: 100%;              /* Responsive on all screen sizes */
+  height: auto;
+  border-radius: 10px;          /* Optional: rounded corners */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Optional: subtle shadow */
+}
+
+/* Section Titles */
+.tm-about .title h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.tm-about .title h1.tm-red-text {
+  color: #ff4c4c;  /* Red accent color */
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* About Paragraphs */
+.tm-about p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tm-about .title h2 {
+    font-size: 24px;
+  }
+  .tm-about .title h1.tm-red-text {
+    font-size: 28px;
+  }
+  .tm-about p {
+    font-size: 14px;
+  }
+}
+
 
 
 /* END ABOUT */
@@ -430,6 +472,7 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
+
 
 
 
